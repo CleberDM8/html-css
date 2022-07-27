@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(241, 233, 155);
+    font-family: serif;
+}
+h1{
+    color: blueviolet;
+}
+h1#principal{
+    text-align: center;
+    background-color: aquamarine;
+    color: black;
+}
+h2{
+    color: black;
+}
+.avançado{
+    color: blueviolet;
+}
+.basico{
+    color:blue
+}

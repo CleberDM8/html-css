@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(68, 66, 66);
+}
+h1{
+    color: rgb(123, 238, 129);
+    text-align: center;
+}
+div > p{
+    display: none;
+}
+div:hover > p{
+    display: block
+    
+}
+.div1:hover{
+    font-size: large;
+    
+}
+.div1{
+    color: white;
+}
+p{
+    font-size: x-large;
+    color: white;
+    text-align: justify;
+    text-indent: 25px;
+}

@@ -1,35 +1,74 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 
-
-body{
-    
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header{
     background-color: black;
-    min-height:  150px;
-    padding-top: 40px;
+    color: white;
+    text-align: center;
 }
+
 header > h1{
-    color: white;
-    text-align: center;
-}
-header>p{
-    color: white;
-    text-align: center;
-
+    padding-top: 50px;
+    font-variant: small-caps;
+    
 }
 
+header > p{
+    padding-bottom: 50px;
+    color: white;
+    text-align: center;
 
+}
 
-footer{
+header a, footer a{
+    /*nao é obrigatorio usar o (header, footer) antes do link(a) é mais importante se tiver um link no body com style diferente. Mesma coisa para o a:hover*/
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(49, 48, 48);
+    color: white;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 400px;
+    padding: 10px;
+}
+
+footer {
     background-color: black;
     text-align: center;
-    padding: 10px;
-    margin-top: 30px;
-}
-footer>p{
     color: white;
+    padding: 10px;
+    
 }

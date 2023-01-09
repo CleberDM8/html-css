@@ -12,12 +12,15 @@
 
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
 
         td{
             border: 1px solid black;
             padding: 10px;
+            text-align: center; /*alinhamento horizontaal*/
+            vertical-align: middle;/*alinhamento vertical*/
         }
 
         td.linha1:hover{
@@ -26,6 +29,9 @@
 
         td:hover{
             background-color: aqua;
+        }
+        .numero{
+            text-align: right;
         }
         
     </style>
@@ -49,7 +55,7 @@
         <tr><!--segunda linha-->
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr>
             <td>A3</td>

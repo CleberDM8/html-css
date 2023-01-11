@@ -13,19 +13,39 @@
         table{
             width: 500px;
             border-collapse: collapse;
-
+            position: relative;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
-            
         }
+
         td.num{
             text-align: right;
         }
+
         thead, tfoot{
             color: white;
             background-color: gray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }
+
+        tbody >tr:nth-child(odd){
+            /*efeito zebrado (odd= impar/even= par)*/
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -33,6 +53,7 @@
     <h1>tabelas grandes</h1>
     <!-- anatomia para tabelas grandes
         table
+        caption
             thead
                 tr, td, th
             tbody
@@ -41,10 +62,11 @@
                 tr, td, th
     -->
     <table>
+        <caption>Populaçao dos estados Brasileiros </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populaçao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populaçao</th>
             </tr>
         </thead>
         <tbody>
@@ -68,16 +90,103 @@
                 <td>Parana</td>
                 <td class="num">6</td>
             </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">6</td>
+            </tr>
 
         </tbody>
+        
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>114</strong></td>
             </tr>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore eaque explicabo praesentium eveniet recusandae dignissimos nihil omnis deserunt nisi, illum necessitatibus eos in ipsum suscipit rem? Eaque, quos perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, laboriosam harum! Cupiditate, natus consequuntur velit quod id, autem pariatur totam obcaecati quam expedita veritatis non suscipit aut dolorum iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam cum at inventore? Dolorum, voluptas! Suscipit unde labore quas eaque deleniti! Tempora, voluptatibus! Totam distinctio, nisi nostrum a necessitatibus possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur maxime cum omnis voluptates debitis in laboriosam at, inventore libero. Ipsum tempore commodi suscipit vel obcaecati unde iusto quibusdam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime molestias laboriosam, exercitationem assumenda ratione a eaque magnam cupiditate expedita omnis quam. Sint autem odio nostrum aut perspiciatis voluptates. Vero, ad.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore eaque explicabo praesentium eveniet recusandae dignissimos nihil omnis deserunt nisi, illum necessitatibus eos in ipsum suscipit rem? Eaque, quos perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, laboriosam harum! Cupiditate, natus consequuntur velit quod id, autem pariatur totam obcaecati quam expedita veritatis non suscipit aut dolorum iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam cum at inventore? Dolorum, voluptas! Suscipit unde labore quas eaque deleniti! Tempora, voluptatibus! Totam distinctio, nisi nostrum a necessitatibus possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur maxime cum omnis voluptates debitis in laboriosam at, inventore libero. Ipsum tempore commodi suscipit vel obcaecati unde iusto quibusdam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime molestias laboriosam, exercitationem assumenda ratione a eaque magnam cupiditate expedita omnis quam. Sint autem odio nostrum aut perspiciatis voluptates. Vero, ad.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore eaque explicabo praesentium eveniet recusandae dignissimos nihil omnis deserunt nisi, illum necessitatibus eos in ipsum suscipit rem? Eaque, quos perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, laboriosam harum! Cupiditate, natus consequuntur velit quod id, autem pariatur totam obcaecati quam expedita veritatis non suscipit aut dolorum iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam cum at inventore? Dolorum, voluptas! Suscipit unde labore quas eaque deleniti! Tempora, voluptatibus! Totam distinctio, nisi nostrum a necessitatibus possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur maxime cum omnis voluptates debitis in laboriosam at, inventore libero. Ipsum tempore commodi suscipit vel obcaecati unde iusto quibusdam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime molestias laboriosam, exercitationem assumenda ratione a eaque magnam cupiditate expedita omnis quam. Sint autem odio nostrum aut perspiciatis voluptates. Vero, ad.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore eaque explicabo praesentium eveniet recusandae dignissimos nihil omnis deserunt nisi, illum necessitatibus eos in ipsum suscipit rem? Eaque, quos perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, laboriosam harum! Cupiditate, natus consequuntur velit quod id, autem pariatur totam obcaecati quam expedita veritatis non suscipit aut dolorum iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam cum at inventore? Dolorum, voluptas! Suscipit unde labore quas eaque deleniti! Tempora, voluptatibus! Totam distinctio, nisi nostrum a necessitatibus possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur maxime cum omnis voluptates debitis in laboriosam at, inventore libero. Ipsum tempore commodi suscipit vel obcaecati unde iusto quibusdam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime molestias laboriosam, exercitationem assumenda ratione a eaque magnam cupiditate expedita omnis quam. Sint autem odio nostrum aut perspiciatis voluptates. Vero, ad.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore eaque explicabo praesentium eveniet recusandae dignissimos nihil omnis deserunt nisi, illum necessitatibus eos in ipsum suscipit rem? Eaque, quos perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, laboriosam harum! Cupiditate, natus consequuntur velit quod id, autem pariatur totam obcaecati quam expedita veritatis non suscipit aut dolorum iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam cum at inventore? Dolorum, voluptas! Suscipit unde labore quas eaque deleniti! Tempora, voluptatibus! Totam distinctio, nisi nostrum a necessitatibus possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur maxime cum omnis voluptates debitis in laboriosam at, inventore libero. Ipsum tempore commodi suscipit vel obcaecati unde iusto quibusdam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime molestias laboriosam, exercitationem assumenda ratione a eaque magnam cupiditate expedita omnis quam. Sint autem odio nostrum aut perspiciatis voluptates. Vero, ad.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore eaque explicabo praesentium eveniet recusandae dignissimos nihil omnis deserunt nisi, illum necessitatibus eos in ipsum suscipit rem? Eaque, quos perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, laboriosam harum! Cupiditate, natus consequuntur velit quod id, autem pariatur totam obcaecati quam expedita veritatis non suscipit aut dolorum iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam cum at inventore? Dolorum, voluptas! Suscipit unde labore quas eaque deleniti! Tempora, voluptatibus! Totam distinctio, nisi nostrum a necessitatibus possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur maxime cum omnis voluptates debitis in laboriosam at, inventore libero. Ipsum tempore commodi suscipit vel obcaecati unde iusto quibusdam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime molestias laboriosam, exercitationem assumenda ratione a eaque magnam cupiditate expedita omnis quam. Sint autem odio nostrum aut perspiciatis voluptates. Vero, ad.</p>
     
 </body>
 </html>

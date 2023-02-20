@@ -9,8 +9,12 @@
 }
 
 header{
-    text-align: center;
     background-color: rgb(168, 168, 168);
+}
+
+header > h1{
+    text-align: center;
+    padding: 10px;
 }
 
 i#burguer{
@@ -39,6 +43,7 @@ menu > ul > li > a{
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
+    text-align: center;
     color: white;
     background-color: rgb(83, 82, 82);
     border-top: 2px solid rgb(161, 160, 160);
